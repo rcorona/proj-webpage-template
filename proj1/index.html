@@ -24,18 +24,16 @@
 		      from floor(xmin, ymin) to ceil(xmax, ymax) in increments of 1, where the mins/maxes are the minimum/maximum values out of each 
 		      of {x0, x1, x2}, {y0, y1, y2} (ie. the bounding box of the triangle). 
 		      
-		      For each of these pairs, I add 0.5, i.e. (sx, sy) = (x + 0.5, y + 0.5) so that we sample each pixel from the center. 
+		      For each of these pairs, I add 0.5, i.e. (sx, sy) = (x + 0.5, y + 0.5), so that we sample each pixel from the center. 
 		      I then pass the pixel center along with the 3 triangle coordinates to a helper function inside_triangle. 
-		      Inside_triangle will run the line test from class on (sx, sy) and each line resulting from each pairing of the 
-		      corners of the triangle. The line test is implemented by another helper function line_test(x, y, x0, y0, x1, y1) which 
-		      returns true if (sx, sy) lies on or above the line from (x0, y0) to (x1, y1). 
+		      Inside_triangle will TODO. 
 		      
 		      <strong>No worse:</strong> This algorithm is no worse than traversing and testing all pixels within the bounding box of the 
 		      triangle because it is exactly that algorithm :) 
 
               </p>
 
-              <img src="images/img_here" align="middle" width="400px" />
+              <img src="task1.png" align="middle" width="400px" />
               <figcaption align="middle">figcaption</figcaption>
 
               <h3 align="middle">Task 2</h3>
